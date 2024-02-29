@@ -1,4 +1,4 @@
-<img src="files/main_icon.jpg" alt="icon" style="width:150px;"/>
+<img src="files/main_icon.png" alt="icon" style="width:150px;"/>
 
 # MyTerm
 
