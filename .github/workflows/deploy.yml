@@ -20,7 +20,7 @@ jobs:
       - name: 'Bump patch version'
         run: |
           NEW_VERSION=$(npm version patch | tr -d v)
-          jq '.package.version = "'"$NEW_VERSION"'"' src-tauri/tauri.conf.json 
+          echo $(jq '.package.version = "'"$NEW_VERSION"'"' src-tauri/tauri.conf.json) > src-tauri/tauri.conf.json 
           echo "version=$NEW_VERSION" >> $GITHUB_OUTPUT
 
       - name: Commit changes
