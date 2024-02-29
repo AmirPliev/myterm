@@ -1,7 +1,14 @@
-# Tauri + Svelte + Typescript
+# MyTerm
 
-This template should help get you started developing with Tauri, Svelte and TypeScript in Vite.
+This repository is a small (really small) side project that I tried playing with. My goals with this project was to build a client application, use Rust as a language for a concrete project and try out Tauri's developing / deployment process.
 
-## Recommended IDE Setup
+## Prerequisites
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
+The prerequisites for this project are equivalent to the Tauri prerequisites:
+https://tauri.app/v1/guides/getting-started/prerequisites
+
+Follow the instructions here and it should setup you up for this project as well.
+
+## Use
+
+Go to the release page for this repository and download the executable for your platform.

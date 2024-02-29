@@ -15,10 +15,17 @@ fn perform_command(command: String) -> String {
         return "".to_string();
     }
 
-    let output = process::Command::new("sh")
-    .arg("-c")
-    .arg(command)
-    .output();
+    let output = if cfg!(target_os = "windows") {
+        process::Command::new("cmd")
+            .args(["/C", &command])
+            .output()
+    } else {
+        process::Command::new("sh")
+        .arg("-c")
+        .arg(&command)
+        .output()
+    };
+
 
     match output {
         Ok(output) => {
