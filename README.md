@@ -1,6 +1,10 @@
+<img src="files/main_icon.jpg" alt="icon" style="width:150px;"/>
+
 # MyTerm
 
-This repository is a small (really small) side project that I tried playing with. My goals with this project was to build a client application, use Rust as a language for a concrete project and try out Tauri's developing / deployment process.
+![Example](files/screenshot.png?raw=true 'Example')
+
+This repository is a (really) small side project that I tried playing with. My goals with this project was to build a client application, use Rust as a language for a concrete project and try out Tauri's developing / deployment process.
 
 ## Prerequisites
 

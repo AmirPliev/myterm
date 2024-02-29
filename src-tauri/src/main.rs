@@ -3,7 +3,12 @@
 
 use std::env;
 use std::process;
-use std::os::unix::process::ExitStatusExt; // Add this line to bring ExitStatusExt into scope
+
+#[cfg(unix)]
+use std::os::unix::process::ExitStatusExt;
+
+#[cfg(windows)]
+use std::os::windows::process::ExitStatusExt;
 
 // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
 #[tauri::command]
